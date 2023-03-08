@@ -6,13 +6,13 @@ XSBC-Original-Maintainer: APT Development Team <deity@lists.debian.org>
 Uploaders: Michael Vogt <mvo@debian.org>, Julian Andres Klode <jak@debian.org>
 Rules-Requires-Root: no
 Standards-Version: 4.5.0
-Build-Depends: apt (>= 1.0.9.4),
-               apt-utils <!nocheck>,
+Build-Depends: apt (>= 1.0.9.4)  [!i386],
+               apt-utils <!nocheck>  [!i386],
                debhelper-compat (= 12),
                dh-python [!i386],
                distro-info-data <!nocheck>,
                fakeroot,
-               libapt-pkg-dev (>= 1.9.11~),
+               libapt-pkg-dev (>= 1.9.11~)  [!i386],
                python3-all (>= 3.3),
                python3-all-dev (>= 3.3),
                python3-all-dbg (>= 3.3),
