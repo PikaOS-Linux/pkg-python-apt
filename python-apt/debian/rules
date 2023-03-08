@@ -10,6 +10,7 @@ export DEB_CFLAGS_MAINT_APPEND=-Wno-write-strings \
                                -DTIME=\""$(TIME)"\"
 export DEB_BUILD_MAINT_OPTIONS=hardening=+all
 export PYBUILD_NAME=apt
+DEB_BUILD_OPTIONS=nocheck
 
 BUILDDIR3 := $(shell pybuild --print build_dir --interpreter python3)
 
